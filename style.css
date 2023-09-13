@@ -9,7 +9,7 @@
 }
 body{
     overflow-x: hidden;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, color 0.3s;
 }
         /* Dark theme styles */
         body.dark {
@@ -73,6 +73,7 @@ body{
             background-color: white;
             height: 35px;
             width: 60px;
+            
         }
 
         .btn_dark:hover {
@@ -84,11 +85,6 @@ body{
 }
 #sun{
     display: none;
-}
-#moon:hover{
-    transition: all 2s;
-    transform: translateX(-30%) !important;
-
 }
 .para{
    padding-top: 10%;
@@ -143,7 +139,7 @@ body{
     font-family: 'Nunito Sans', sans-serif; 
     font-size: 20px;
     text-align: justify;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.8;
 }
 .vistors{
@@ -247,6 +243,11 @@ body{
        padding: 0% !important;
         
     }
+    .para_content{
+        padding-left: 0%;
+        margin-left: 0%;
+        margin-right: 6px;
+    }
     .my_name{
         font-size: 20px !important;
         font-family: 'Poppins', sans-serif;
@@ -284,9 +285,3 @@ body{
     text-align: center;
     font-weight: 700;
  }
-
-
-
-
-
-
