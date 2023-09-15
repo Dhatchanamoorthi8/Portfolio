@@ -1,40 +1,38 @@
-// scrool Spy
 
-
-// const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-//     target: '#myscroll'
-//   })
-
-// DarkTheme
 const themeToggleBtn = document.getElementById("theme-click");
 const body = document.body;
 let isDarkTheme = true;
 
-themeToggleBtn.addEventListener("click", () => {
-
-    if (isDarkTheme) {
+// Function to set the theme based on the user's preference
+function setTheme(theme) {
+    if (theme === "dark") {
         body.classList.remove("light");
         body.classList.add("dark");
-        isDarkTheme = false;
+        isDarkTheme = true;
     } else {
         body.classList.remove("dark");
         body.classList.add("light");
-        isDarkTheme = true;
+        isDarkTheme = false;
+    }
+}
+
+// Check if the user's preference is stored in localStorage
+const storedTheme = localStorage.getItem("theme");
+if (storedTheme) {
+    setTheme(storedTheme);
+}
+
+themeToggleBtn.addEventListener("click", () => {
+    if (isDarkTheme) {
+        setTheme("light");
+        // Store the user's preference in localStorage
+        localStorage.setItem("theme", "light");
+    } else {
+        setTheme("dark");
+        // Store the user's preference in localStorage
+        localStorage.setItem("theme", "dark");
     }
 });
 
-const observer = new IntersectionObserver((entire)=>{
-    entire.forEach((entry)=>{
-        console.log(entry);
-        if(entry.isIntersecting){
-            entry.target.classList.add('show')
-        }
-        else{
-            entry.target.classList.remove('show')
-        }
 
-    })
-})
 
-const hiddenElemnt = document.querySelector('.hidden');
-hiddenElemnt.forEach((el) => observer.observe(el));
