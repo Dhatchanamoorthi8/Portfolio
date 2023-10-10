@@ -191,9 +191,6 @@ body{
 #contact_icon{
     color: #000000;
 }
-.{
-    transition: 500ms all;
-}
 .icon_hover:hover{
     transform: scale(1.05); 
 }
@@ -279,6 +276,13 @@ body{
     }
     .download{
         margin-left: 20% !important;
+    }
+    .contact_end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 50px;
     }
 
  }
