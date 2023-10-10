@@ -21,6 +21,9 @@ body{
         #moon{
             display: none;
         }
+        #mobile{
+            color: #FFFFFF;
+        }
         #sun{
             display: flex;
         }
@@ -43,11 +46,7 @@ body{
         #contact_icon{
             color: white;
         }
-        .edu_img{
-            color: #ffffff;
-            background-color: #ffffff;
-        }
-        }
+    }
 
         /* Light theme styles */
         body.light {
@@ -64,6 +63,10 @@ body{
             }
             #sun{
                 display: none;
+            }
+            #mobile{
+                color: #000000;
+
             }
         }
         .btn_dark {
@@ -151,7 +154,8 @@ body{
     font-weight: bolder;
 }
 .vistors1{
-    padding-top: 10% !important;
+    padding-top: 15% !important;
+    padding-bottom: 10% !important;
 }
 .connect_us{
     display: flex;
@@ -175,8 +179,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    gap: 60px;
+    padding: 10px;
+    gap: 10px;
 }
 .head_3{
     font-size: 25px;
@@ -187,14 +191,14 @@ body{
 #contact_icon{
     color: #000000;
 }
-.icon_hover{
+.{
     transition: 500ms all;
 }
 .icon_hover:hover{
-    transform: scale(1.5); 
+    transform: scale(1.05); 
 }
 .card_hover{
-    transition: 500ms all;
+    transition: 0.2s ease-in-out;
 }
 .card_hover:hover{
     transform: scale(1.04);
@@ -285,3 +289,13 @@ body{
     text-align: center;
     font-weight: 700;
  }
+
+.contact_end .icon_hover {
+    height: 10%;
+    width: 10%;
+    border-radius: 50px;
+}
+.icons-link{
+    font-size: 50px;
+}
+
