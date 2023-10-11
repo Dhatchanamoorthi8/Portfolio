@@ -284,7 +284,12 @@ body{
         padding: 10px;
         gap: 50px;
     }
-
+    .wrapper {
+        display: inline-flex;
+        list-style: none;
+        padding: 0%;
+        gap: 0px !important;
+      }
  }
 
  .skills{
@@ -299,6 +304,7 @@ body{
     display: inline-flex;
     list-style: none;
     gap: 20px;
+    padding: 0%;
   }
   
   .wrapper .icon {
@@ -367,7 +373,7 @@ body{
   .wrapper .phone:hover,
   .wrapper .phone:hover .tooltip,
   .wrapper .phone:hover .tooltip::before {
-    background: #aeacaf;
+    background: #8a8a8abe;
     color: #ffffff;
   }
   
